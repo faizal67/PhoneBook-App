@@ -3,6 +3,8 @@ const app = express()
 var morgan = require('morgan')
 const cors = require('cors')
 
+app.use(express.static('build'))
+
 app.use(cors())
 
 app.use(express.json())
@@ -27,7 +29,7 @@ let persons =
         },
         { 
           "id": 4,
-          "name": "Mary Poppendieck", 
+          "name": "faizal Poppendieck", 
           "number": "39-23-6423122"
         }
     ]
